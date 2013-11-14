@@ -1,0 +1,61 @@
+{
+    "description" : "Displays important mongodb metrics",
+    "icon" : "icon.png",
+    "command" : "node index.js",
+    "postExtract" : "npm install",
+    "ignore" : "node_modules",
+
+    "metrics" : [
+        "MONGO_BTREE_HITS",
+        "MONGO_BTREE_MISSES",
+        "MONGO_BTREE_MISS_RATIO",
+        "MONGO_CONNECTIONS",
+        "MONGO_CONNECTIONS_AVAILABLE",
+        "MONGO_CONNECTION_LIMIT",
+        "MONGO_GLOBAL_LOCK",
+        "MONGO_MEM_RESIDENT",
+        "MONGO_MEM_VIRTUAL",
+        "MONGO_MEM_MAPPED",
+        "MONGO_OPS_INSERTS",
+        "MONGO_OPS_QUERY",
+        "MONGO_OPS_UPDATE",
+        "MONGO_OPS_DELETE",
+        "MONGO_OPS_GETMORE",
+        "MONGO_OPS_COMMAND"
+    ],
+
+    "paramSchema" : [
+        {
+            "title" : "Hostname",
+            "name" : "hostname",
+            "description" : "The hostname of MongoDB",
+            "type" : "string",
+            "default": "127.0.0.1"
+        },
+        {
+            "title" : "Port",
+            "name" : "port",
+            "description" : "Port to use when accessing MongoDB",
+            "type" : "string",
+            "default": 27107
+        },
+        {
+            "title" : "Username",
+            "name" : "username",
+            "description" : "(optional) Username to access MongoDB",
+            "type" : "string"
+        },
+        {
+            "title" : "Password",
+            "name" : "password",
+            "description" : "(optional) Pasword to access MongoDB",
+            "type" : "password"
+        },
+        {
+            "title" : "Source",
+            "name" : "source",
+            "description" : "(optional) The Source to display in the legend for the MongoDB data.  It will default to the hostname of the server",
+            "type" : "string"
+        }
+    ]
+}

@@ -44,7 +44,7 @@
             "name" : "port",
             "description" : "Port to use when accessing MongoDB",
             "type" : "string",
-            "default": 27107
+            "default": 27017
         },
         {
             "title" : "Username",

@@ -21,7 +21,7 @@
 ### Installation & Configuration
 
 * The `hostname` used to contact the mongo server
-* The `port` used to contact the mongo server, defaults to 27107
+* The `port` used to contact the mongo server, defaults to 27017
 * The `username` used to contact the mongo server
 * The `passsword` used to contact the mongo server
 * The `source` to prefix the display in the legend for the mongo data.  It will default to the hostname of the server.

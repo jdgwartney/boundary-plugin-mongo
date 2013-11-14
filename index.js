@@ -72,7 +72,7 @@ var _pollInterval = _param.pollInterval || 1000;
 // if the user knows this and sets the right port, continue,
 // otherwise +1000 to the custom port,
 // otherwise use the default 28107
-var _port = (_param.port && _param.port != 28017) ? _param.port + 1000 : 28017;
+var _port = (_param.port && _param.port != 28017) ? parse(_param.port) + 1000 : 28017;
 
 // if we do not have a source, then set it
 var _source = _param.source || _os.hostname();

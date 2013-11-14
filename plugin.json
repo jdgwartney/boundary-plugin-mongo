@@ -24,6 +24,13 @@
         "MONGO_OPS_COMMAND"
     ],
 
+    "dashboards" : [
+        {
+            "name" : "mongodb",
+            "layout" : "d-w=4&d-h=3&d-pad=5&d-bg=none&d-g-MONGO_CONNECTIONS=0-0-1-1&d-g-MONGO_CONNECTION_LIMIT=1-0-1-1&d-g-MONGO_BTREE_HITS=0-1-1-1&d-g-MONGO_BTREE_MISSES=1-1-1-1&d-g-MONGO_BTREE_MISS_RATIO=2-1-1-1&d-g-MONGO_GLOBAL_LOCK=3-1-1-1&d-g-MONGO_MEM_VIRTUAL=3-0-1-1&d-g-MONGO_MEM_RESIDENT=2-0-1-1&d-g-MONGO_OPS_INSERTS=0-2-1-1&d-g-MONGO_OPS_UPDATE=1-2-1-1&d-g-MONGO_OPS_DELETE=2-2-1-1&d-g-MONGO_OPS_QUERY=3-2-1-1"
+        }
+    ],
+
     "paramSchema" : [
         {
             "title" : "Hostname",

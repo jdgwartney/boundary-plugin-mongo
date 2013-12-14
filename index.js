@@ -135,8 +135,8 @@ function poll(cb)
 
             { accesses: 1, hits: 1, misses: 0, resets: 0, missRatio: 0 }
         */
-        var p_btree = _previous && _previous.indexCounters && _previous.indexCounters.btree || {};
-        var c_btree = current.indexCounters.btree;
+        var p_btree = _previous && _previous.indexCounters && _previous.indexCounters.btree || _previous && _previous.indexCounters || {};
+        var c_btree = current.indexCounters.btree || current.indexCounters;
         //console.log('MONGO_BTREE_ACCESSES %d %s', diff(c_btree.accesses, p_btree.accesses), _source);
         console.log('MONGO_BTREE_HITS %d %s', diff(c_btree.hits, p_btree.hits), _source);
         console.log('MONGO_BTREE_MISSES %d %s', diff(c_btree.misses, p_btree.misses), _source);

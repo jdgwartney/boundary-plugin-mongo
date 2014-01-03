@@ -1,5 +1,21 @@
 # MongoDB Graphdat Plugin
 
+### Pre Reqs
+
+The statistics are pulled from http://hostname:(port+1000)/_status.  If you did not change the mongo default port, we will use 28107.
+
+**Please make sure this port is open in your firewall if you are polling remotely.**
+
+If the relay is running locally, you can use **localhost** for the hostname and bypass any firewall restrictions.
+
+### Installation & Configuration
+
+* The `hostname` used to contact the mongo server
+* The `port` used to contact the mongo server, defaults to 27017
+* The `username` used to contact the mongo server
+* The `passsword` used to contact the mongo server
+* The `source` to prefix the display in the legend for the mongo data.  It will default to the hostname of the server.
+
 #### Tracks the following metrics for [MongoDB](http://www.mongodb.org/)
 * MONGO_BTREE_HITS -the number of times an accessed index was return from memory
 * MONGO_BTREE_MISSES - the number of times an accessed index was not in memory"
@@ -17,11 +33,3 @@
 * MONGO_OPS_DELETE - The number of mongo delete operations
 * MONGO_OPS_GETMORE - The number of mongo getmore operations
 * MONGO_OPS_COMMAND - The number of mongo commands issued
-
-### Installation & Configuration
-
-* The `hostname` used to contact the mongo server
-* The `port` used to contact the mongo server, defaults to 27017
-* The `username` used to contact the mongo server
-* The `passsword` used to contact the mongo server
-* The `source` to prefix the display in the legend for the mongo data.  It will default to the hostname of the server.

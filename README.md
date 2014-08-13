@@ -4,6 +4,10 @@
 
 The statistics are pulled from http://hostname:(port+1000)/_status.  If you did not change the mongo default port, we will use 28107.
 
+**Please verify that you can view the statistics from the URL (http://localhost:28017/_status)**
+
+If you cannot view the page, you may need to enable the [Mongo REST interface](http://docs.mongodb.org/manual/reference/configuration-options/#net.http.RESTInterfaceEnabled)
+
 **Please make sure this port is open in your firewall if you are polling remotely.**
 
 If the relay is running locally, you can use **localhost** for the hostname and bypass any firewall restrictions.

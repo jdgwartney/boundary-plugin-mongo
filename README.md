@@ -10,6 +10,7 @@ Collects metrics from a MongoDB instance. MongoDB statistics are pulled via a RE
 
 ### Prerequisites
 - node version 0.8.0 or later
+- npm version 1.4.21 or later
 
 ### Plugin Setup
 

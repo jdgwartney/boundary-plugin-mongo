@@ -1,6 +1,6 @@
 Boundary MongoDB Plugin
 -----------------------
-Collects metrics from a MongoDB server instance. MongoDB statistics are pulled via a REST API call.
+Collects metrics from a MongoDB server instance. MongoDB statistics are pulled via a REST API call. See video [walkthrough](https://help.boundary.com/hc/articles/201842211).
 
 ### Prerequisites
 

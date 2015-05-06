@@ -1,0 +1,130 @@
+{
+  "MONGO_BTREE_HITS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "the number of times an accessed index was return from memory",
+    "displayName": "Mongo hits",
+    "displayNameShort": "mongo-hits",
+    "unit": "number"
+  },
+  "MONGO_BTREE_MISSES": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "the number of times an accessed index was not in memory",
+    "displayName": "Mongo misses",
+    "displayNameShort": "mongo-misses",
+    "unit": "number"
+  },
+  "MONGO_BTREE_MISS_RATIO": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Ratio of hits to misses [ hits / (hits+misses) ]",
+    "displayName": "Mongo miss ratio",
+    "displayNameShort": "mongo-miss-ratio",
+    "unit": "percent"
+  },
+  "MONGO_CONNECTIONS": {
+    "defaultAggregate": "SUM",
+    "defaultResolutionMS": 1000,
+    "description": "The number of open connections",
+    "displayName": "Mongo connections",
+    "displayNameShort": "mongo-conn",
+    "unit": "number"
+  },
+  "MONGO_CONNECTIONS_AVAILABLE": {
+    "defaultAggregate": "SUM",
+    "defaultResolutionMS": 1000,
+    "description": "The number of available connections",
+    "displayName": "Mongo avail conns",
+    "displayNameShort": "mongo-conn-avail",
+    "unit": "number"
+  },
+  "MONGO_CONNECTION_LIMIT": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "The ratio of used connections [used / (used+avail)]",
+    "displayName": "Mongo conn limit",
+    "displayNameShort": "mongo-conn-limit",
+    "unit": "percent"
+  },
+  "MONGO_GLOBAL_LOCK": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "Percentage of time spent in the global lock",
+    "displayName": "Mongo global lock ratio",
+    "displayNameShort": "mongo-global-lock",
+    "unit": "percent"
+  },
+  "MONGO_MEM_MAPPED": {
+    "defaultAggregate": "SUM",
+    "defaultResolutionMS": 1000,
+    "description": "Mongo uses memory-mapped files, this will be about the size of the DB",
+    "displayName": "Mongo mapped memory",
+    "displayNameShort": "mongo-mem-mapped",
+    "unit": "bytecount"
+  },
+  "MONGO_MEM_RESIDENT": {
+    "defaultAggregate": "SUM",
+    "defaultResolutionMS": 1000,
+    "description": "The amount of RAM being used by Mongo",
+    "displayName": "Mongo resident memory",
+    "displayNameShort": "mongo-mem-res",
+    "unit": "bytecount"
+  },
+  "MONGO_MEM_VIRTUAL": {
+    "defaultAggregate": "SUM",
+    "defaultResolutionMS": 1000,
+    "description": "The amount of virtual memory used by Mongo",
+    "displayName": "Mongo virtual memory",
+    "displayNameShort": "mongo-mem-virt",
+    "unit": "bytecount"
+  },
+  "MONGO_OPS_COMMAND": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "The number of mongo commands issued",
+    "displayName": "Mongo commands",
+    "displayNameShort": "mongo-commands",
+    "unit": "number"
+  },
+  "MONGO_OPS_DELETE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "The number of mongo delete operations",
+    "displayName": "Mongo deletes",
+    "displayNameShort": "mongo-deletes",
+    "unit": "number"
+  },
+  "MONGO_OPS_GETMORE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "The number of mongo getmore operations",
+    "displayName": "Mongo getmore",
+    "displayNameShort": "mongo-getmore",
+    "unit": "number"
+  },
+  "MONGO_OPS_INSERTS": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "The number of mongo insert operations",
+    "displayName": "Mongo inserts",
+    "displayNameShort": "mongo-inserts",
+    "unit": "number"
+  },
+  "MONGO_OPS_QUERY": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "The number of mongo query operations",
+    "displayName": "Mongo queries",
+    "displayNameShort": "mongo-queries",
+    "unit": "number"
+  },
+  "MONGO_OPS_UPDATE": {
+    "defaultAggregate": "AVG",
+    "defaultResolutionMS": 1000,
+    "description": "The number of mongo update operations",
+    "displayName": "Mongo updates",
+    "displayNameShort": "mongo-updates",
+    "unit": "number"
+  }
+}
